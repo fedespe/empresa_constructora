@@ -1,0 +1,24 @@
+body { 
+	overflow-y:scroll; 
+}
+
+.tarjetaPresentacionTrabajo{
+	cursor: pointer;
+}
+
+.imagenTarjetaPresentacionTrabajo{
+	width: 200px;
+	height: 200px;
+}
+
+.tituloTarjetaPresentacionTrabajo, .descripcionTarjetaPresentacionTrabajo{
+	text-transform: uppercase;
+}
+
+.subtituloTarjetaPresentacionTrabajo{
+	display: block;
+}
+
+h2[class="descripcionTrabajo"]{
+	text-align: center;
+}
