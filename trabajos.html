@@ -17,6 +17,9 @@
     <!-- Custom styles for this template -->
     <link href="css/round-about.css" rel="stylesheet">
 
+    <!--icono portfolio-->
+    <link href="lib/ionicons/css/ionicons.css" rel="stylesheet">
+
 	<link href="css/fb.css" rel="stylesheet">
   </head>
 
@@ -50,76 +53,133 @@
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-		<div class="row" style="margin-bottom: 20px;">
-			<div class="col-lg-12 text-center">
-				<h1 class="mt-5">Nuestros Trabajos</h1>
-				<p>A continuación se presenta una lista de algunos de los trabajos que hemos realizado hasta el momento.</p>
-			</div>
-		</div>
 
-      <!--<div class="row">
-        <div class="col-lg-4 col-sm-6 text-center mb-4">
-          <img class="rounded-circle img-fluid d-block mx-auto" src="http://placehold.it/200x200" alt="">
-          <h3>John Smith
-            <small>Job Title</small>
-          </h3>
-          <p>What does this team member to? Keep it short! This is also a great spot for social links!</p>
+    <!--==========================
+      Portfolio Section
+    ============================-->
+    <section id="portfolio"  class="section-bg" >
+      <div class="container">
+
+        <header class="section-header">
+          <div class="row" style="margin-bottom: 20px;">
+            <div class="col-lg-12 text-center">
+              <h1 class="mt-5">Nuestros Trabajos</h1>
+              <p>A continuación se presenta una lista de algunos de los trabajos que hemos realizado hasta el momento.</p>
+            </div>
+          </div>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">Todos</li>
+              <li data-filter=".filter-acondicionamiento">Acondicionamientos</li>
+			        <li data-filter=".filter-construccion">Construcciones</li>
+              <li data-filter=".filter-sanitaria">Sanitaria</li>           
+            </ul>
+          </div>
         </div>
-      </div>-->
 
-		<div class="row">
-			<div class="col-lg-4 col-sm-6 text-center mb-4 tarjetaPresentacionTrabajo" onclick="verTrabajo('trabajo_1')">
-					<img class="rounded-circle img-fluid d-block mx-auto imagenTarjetaPresentacionTrabajo" src="img/trabajos/Trabajo_1/Imagen_Tarjeta_Presentacion.jpg" alt="">
-					<h3 class="tituloTarjetaPresentacionTrabajo">Sanitario 1 <small class="subtituloTarjetaPresentacionTrabajo">Centro</small></h3>
-					<p class="descripcionTarjetaPresentacionTrabajo">
-            Realización de baño a nuevo en el centro de Montevideo.
-					</p>
-			</div>
+        <div class="row portfolio-container">
 
-			<div class="col-lg-4 col-sm-6 text-center mb-4 tarjetaPresentacionTrabajo" onclick="verTrabajo('trabajo_2')">
-				<img class="rounded-circle img-fluid d-block mx-auto imagenTarjetaPresentacionTrabajo" src="img/trabajos/Trabajo_2/Imagen_Tarjeta_Presentacion.jpg" alt="">
-				<h3 class="tituloTarjetaPresentacionTrabajo">Sanitario 2 <small class="subtituloTarjetaPresentacionTrabajo">Canelones</small></h3>
-				<p class="descripcionTarjetaPresentacionTrabajo">
-          Realizaión de baño a nuevo en Canelones.
-				</p>
-			</div>
-			
-			<div class="col-lg-4 col-sm-6 text-center mb-4 tarjetaPresentacionTrabajo" onclick="verTrabajo('trabajo_3')">
-				<img class="rounded-circle img-fluid d-block mx-auto imagenTarjetaPresentacionTrabajo" src="img/trabajos/Trabajo_3/Imagen_Tarjeta_Presentacion.jpg" alt="">
-				<h3 class="tituloTarjetaPresentacionTrabajo">Cabaña <small class="subtituloTarjetaPresentacionTrabajo">La Floresta</small></h3>
-				<p class="descripcionTarjetaPresentacionTrabajo">
-          Realización de cabaña en la floresta. Construcción liviana en madera aserrada.
-				</p>
-			</div>
-			
-			<div class="col-lg-4 col-sm-6 text-center mb-4 tarjetaPresentacionTrabajo" onclick="verTrabajo('trabajo_4')" >
-				<img class="rounded-circle img-fluid d-block mx-auto imagenTarjetaPresentacionTrabajo" src="img/trabajos/Trabajo_4/Imagen_Tarjeta_Presentacion.jpg" alt="">
-				<h3 class="tituloTarjetaPresentacionTrabajo">Acondicionamiento general - delegación de Brasil <small class="subtituloTarjetaPresentacionTrabajo">Carrasco</small></h3>
-				<p class="descripcionTarjetaPresentacionTrabajo">
-					Acondicionamiento general de la mansión perteneciente a la delegación de Brasil en carrasco. Realización de acondicionamiento general de dicha vivienda consta de pinturas en fachadas e interiores, aberturas de madera, tratamiento en pavimentos, cocina, caldera, entre otros.
-				</p>
-			</div>
-			
-			<div class="col-lg-4 col-sm-6 text-center mb-4 tarjetaPresentacionTrabajo" onclick="verTrabajo('trabajo_5')">
-				<img class="rounded-circle img-fluid d-block mx-auto imagenTarjetaPresentacionTrabajo" src="img/trabajos/Trabajo_5/Imagen_Tarjeta_Presentacion.jpg" alt="">
-				<h3 class="tituloTarjetaPresentacionTrabajo">Dormitorio <small class="subtituloTarjetaPresentacionTrabajo">Cerro</small></h3>
-				<p class="descripcionTarjetaPresentacionTrabajo">
-          Acondicionamiento de dormitorio. Realización de trabajos de terminación en paredes y pavimentos.
-				</p>
-			</div>
-			
-			<div class="col-lg-4 col-sm-6 text-center mb-4 tarjetaPresentacionTrabajo" onclick="verTrabajo('trabajo_6')">
-				<img class="rounded-circle img-fluid d-block mx-auto imagenTarjetaPresentacionTrabajo" src="img/trabajos/Trabajo_6/Imagen_Tarjeta_Presentacion.jpg" alt="">
-				<h3 class="tituloTarjetaPresentacionTrabajo">Escalera steel framing<small class="subtituloTarjetaPresentacionTrabajo">Cerro</small></h3>
-				<p class="descripcionTarjetaPresentacionTrabajo">
-          Realización de escalera utilizando steel framing.
-				</p>
-			</div>
-		</div>
-    </div>
-    <!-- /.container -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-sanitaria wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/trabajos/Trabajo_1/Imagen_Tarjeta_Presentacion.jpg" class="img-fluid" alt="">
+                <a href="img/trabajos/Trabajo_1/Imagen_Tarjeta_Presentacion.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="trabajo_1.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="trabajo_1.html">Sanitario 1 - Centro</a></h4>
+                <p>Realización de baño a nuevo en el centro de Montevideo.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-sanitaria wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/trabajos/Trabajo_2/Imagen_Tarjeta_Presentacion.jpg" class="img-fluid" alt="">
+                <a href="img/trabajos/Trabajo_2/Imagen_Tarjeta_Presentacion.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="trabajo_2.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="trabajo_2.html">Sanitario 2 - Canelones</a></h4>
+                <p> Realizaión de baño a nuevo en Canelones.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-construccion wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/trabajos/Trabajo_3/Imagen_Tarjeta_Presentacion.jpg" class="img-fluid" alt="">
+                <a href="img/trabajos/Trabajo_3/Imagen_Tarjeta_Presentacion.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="trabajo_3.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="trabajo_3.html">Cabaña - La Floresta</a></h4>
+                <p> Realización de cabaña en la floresta. Construcción liviana en madera aserrada.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-acondicionamiento wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/trabajos/Trabajo_4/Imagen_Tarjeta_Presentacion.jpg" class="img-fluid" alt="">
+                <a href="img/trabajos/Trabajo_4/Imagen_Tarjeta_Presentacion.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="trabajo_4.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="trabajo_4.html">Acondicionamiento - Carrasco</a></h4>
+                <p><b>Delegación de Brasil</b></p>
+                <p> Acondicionamiento general de la mansión perteneciente a la delegación de Brasil en carrasco.</p>
+                <!-- Realización de acondicionamiento general de dicha vivienda consta de pinturas en fachadas e interiores, aberturas de madera, tratamiento en pavimentos, cocina, caldera, entre otros.-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-acondicionamiento wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/trabajos/Trabajo_5/Imagen_Tarjeta_Presentacion.jpg" class="img-fluid" alt="">
+                <a href="img/trabajos/Trabajo_5/Imagen_Tarjeta_Presentacion.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="trabajo_5.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="trabajo_5.html">Dormitorio - Cerro</a></h4>
+                <p> Acondicionamiento de dormitorio. Realización de trabajos de terminación en paredes y pavimentos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-construccion filter-acondicionamiento wow fadeInUp">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/trabajos/Trabajo_6/Imagen_Tarjeta_Presentacion.jpg" class="img-fluid" alt="">
+                <a href="img/trabajos/Trabajo_6/Imagen_Tarjeta_Presentacion.jpg" data-lightbox="portfolio" data-title="App 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                <a href="trabajo_6.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+              </figure>
+
+              <div class="portfolio-info">
+                <h4><a href="trabajo_6.html">Escalera steel framing - Cerro</a></h4>
+                <p>Realización de escalera utilizando steel framing.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #portfolio -->
+
+
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
@@ -132,6 +192,7 @@
     <!-- Bootstrap core JavaScript -->
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
   <script src="js/fb.js"></script>
   
