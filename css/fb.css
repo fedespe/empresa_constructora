@@ -1,5 +1,6 @@
 body { 
 	overflow-y:scroll; 
+	font-family: "Open Sans", sans-serif;
 }
 
 .tarjetaPresentacionTrabajo{
@@ -19,6 +20,75 @@ body {
 	display: block;
 }
 
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+/*h2 de detalle de trabajos*/
 h2[class="descripcionTrabajo"]{
 	text-align: center;
 }
+/*fin detalle trabajos*/
+
+/*detalle logo menu*/
+a[class="navbar-brand"]{
+  padding: 2px 0 2px 10px;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  border-left: 4px solid #17a2b8;
+}
+/*fin detalle logo menu*/
+
+
+
+
+/*Nosotros*/
+#nosotros {
+  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+}
+
+#nosotros::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+#nosotros .container {
+  position: relative;
+  z-index: 10;
+}
+
+#nosotros .about-col {
+  background: #fff;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+#nosotros .about-col .img {
+  position: relative;
+}
+
+#nosotros .about-col .img img {
+  border-radius: 4px 4px 0 0;
+}
+/*fin nosotros*/
+
