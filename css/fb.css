@@ -11,10 +11,10 @@ body {
 	width: 200px;
 	height: 200px;
 }
-
+/*
 .tituloTarjetaPresentacionTrabajo, .descripcionTarjetaPresentacionTrabajo{
 	text-transform: uppercase;
-}
+}*/
 
 .subtituloTarjetaPresentacionTrabajo{
 	display: block;
@@ -31,6 +31,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 20px 0;
   padding: 0;
 }
+h1{
+	font-weight: 500;
+	font-size: 50px
+}
+
 
 /*h2 de detalle de trabajos*/
 h2[class="descripcionTrabajo"]{
@@ -91,4 +96,9 @@ a[class="navbar-brand"]{
   border-radius: 4px 4px 0 0;
 }
 /*fin nosotros*/
+
+
+
+
+
 
