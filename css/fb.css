@@ -28,14 +28,13 @@ p {
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
   margin: 0 0 20px 0;
-  padding: 0;
-}
-h1{
-	font-weight: 500;
-	font-size: 40px
+  padding: 2px 0 2px 10px;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 380;
+  letter-spacing: 0.3px; 
+  text-transform: uppercase;
 }
 
 
@@ -55,6 +54,15 @@ a[class="navbar-brand"]{
   border-left: 5px solid #17a2b8; 
   font-size: 30px; 
   text-transform: uppercase;
+}
+a[class="nav-link"]{
+  text-transform: uppercase;
+  padding: 2px 0 2px 10px;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+
+  font-size: 13px; 
 }
 #interior-logo{
   font-size: 20px; 
@@ -456,12 +464,12 @@ a[class="nav-link"]{
   /*box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.16);*/
 }
 
-#contenedor-gal img:hover {
+/*#contenedor-gal img:hover {
   transform : scale(1.4);
-  -moz-transform : scale(1.4);      /* Firefox */
-  -webkit-transform : scale(1.4);   /* Chrome - Safari */
-  -o-transform : scale(1.4);        /* Opera */
-}
+  -moz-transform : scale(1.4); */     /* Firefox */
+  /*-webkit-transform : scale(1.4);*/   /* Chrome - Safari */
+ /* -o-transform : scale(1.4);   */     /* Opera */
+/*}*/
 
 #contenedor-gal .owl-nav, #contenedor-gal .owl-dots {
   margin-top: 5px;
