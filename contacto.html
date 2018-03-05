@@ -15,17 +15,8 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <style>
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
-
-    </style>
+    <link href="css/full-width-pics.css" rel="stylesheet">
+    
 	
 	<link href="css/fb.css" rel="stylesheet">
   </head>
@@ -42,7 +33,9 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Inicio</a>
+              <a class="nav-link" href="index.html">Inicio
+                <span class="sr-only">(current)</span>
+              </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="nosotros.html">Nuestra Empresa</a>
@@ -51,34 +44,127 @@
               <a class="nav-link" href="trabajos.html">Trabajos</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="proximamente.html">Contacto
-				<span class="sr-only">(current)</span>
-			  </a>
+              <a class="nav-link" href="contacto.html">Contacto</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-          <ul class="list-unstyled">
-            <li>Bootstrap 4.0.0</li>
-            <li>jQuery 3.3.0</li>
-          </ul>
+    <!-- Header - set the background image for the header in the line below -->
+    <header class="py-5 bg-image-full" style="background-image: url('img/contacto.jpg');">
+      <img class="img-fluid d-block mx-auto" src="img/index/logo_300x215.png" alt="Logo WF Construcciones">
+    </header>
+
+    <main id="main">
+      <!--==========================
+      Contact Section
+      ============================-->
+      <section id="contact" class="section-bg wow fadeInUp">
+        <div class="container">
+
+          <div class="section-header text-center">
+            <h1>Contacto</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          </div>
+
+          <div class="row contact-info">
+
+            <div class="col-md-4">
+              <div class="contact-address">
+                <i class="ion-ios-location-outline"></i>
+                <h3>Dirección</h3>
+                <address>Montevideo - Uruguay</address>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="contact-phone">
+                <i class="ion-ios-telephone-outline"></i>
+                <h3>Teléfonos</h3>
+                <p><a href="tel:+155895548855">+99 999 999</a></p>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="contact-email">
+                <i class="ion-ios-email-outline"></i>
+                <h3>Email</h3>
+                <p><a href="mailto:info@example.com">info@example.com</a></p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="form">
+            <div id="sendmessage">Su mensaje ha sido enviado con éxito. Gracias!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Su nombre" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Su email" data-rule="email" data-msg="Por favor ingrese un email valido" />
+                  <div class="validation"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" data-msg="Por favor ingrese al menos 4 caracteres" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba un mensaje para nosotros" placeholder="Mensaje"></textarea>
+                <div class="validation"></div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar mensaje</button></div>
+            </form>
+          </div>
+
+        </div>
+      </section><!-- #contact -->
+
+    </main>
+
+    <!-- Footer -->
+    
+    <footer id="footer" class="py-5 bg-dark">
+      <div class="footer-top bg-dark" style="padding: 0px; margin: 0px">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-4 col-md-6 footer-info">
+              <h3>WF <span id="interior-logo">Construcciones</span></h3>
+              <p><b>WF Construcciones</b> es una empresa constructora que realiza trabajos en Uruguay; la cual busca la constante innovación y profesionalismo en los trabajos a realizar.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Links</h4>
+              <ul>
+                <li><i class="ion-ios-arrow-right"></i> <a href="#">Inicio</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="#">Nuestra Empresa</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="#">Trabajos</a></li>
+                <li><i class="ion-ios-arrow-right"></i> <a href="#">Contacto</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h4>Contacto</h4>
+              <p>
+                Montevideo <br>
+                Uruguay <br>
+                <strong>Teléfonos:</strong> 099 999 999<br>
+                <strong>Email:</strong> abc@gmail.com<br>
+              </p>
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-	
-	<!-- Footer -->
-    <footer class="py-5 bg-dark">
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; WF Construcciones 2018</p>
-		<p class="m-0 text-center text-white"><small>Desarrollado por <a href="http://www.fbsection.com" style="text-decoration: none;">F.B. Programadores</a></small></p>
+		    <p class="m-0 text-center text-white"><small>Desarrollado por <a href="http://www.fbsection.com" style="text-decoration: none;">F.B. Programadores</a></small></p>
       </div>
       <!-- /.container -->
     </footer>
@@ -87,7 +173,13 @@
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <script src="lib/contactform/contactform.js"></script>
+	
 	<script src="js/fb.js"></script>
   </body>
 
 </html>
+
+
+
+
