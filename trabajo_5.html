@@ -17,9 +17,15 @@
     <!-- Custom styles for this template -->
     <link href="css/half-slider.css" rel="stylesheet">
 
-    <!-- Css para carousel-->
-    <link href="css/carousel.css" rel="stylesheet">
+    <!-- Css para carousel
+    <link href="css/carousel.css" rel="stylesheet">-->
+
     <link href="lib/ionicons/css/ionicons.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/full-width-pics.css" rel="stylesheet">
 
 	<link href="css/fb.css" rel="stylesheet">
   </head>
@@ -53,88 +59,60 @@
       </div>
     </nav>
 
-   <!-- <header>-->
-      
-   <!-- </header>-->
+   <!-- Header - set the background image for the header in the line below -->
+    <header class="py-5 bg-image-full" style="background-image: url('img/index/img_trabajos.jpg');">
+      <img class="img-fluid d-block mx-auto" src="img/index/logo_300x215.png" alt="Logo WF Construcciones">
+    </header>
 
-    <!-- Page Content -->
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-			<div class="col-lg-12 text-center">
-			  <h1 class="mt-5" class="descripcionTrabajo">Dormitorio - Cerro</h1>
-        <!--<h2 class="mt-5">CENTRO</h2>-->
+   <!--==========================
+      Clients Section
+    ============================-->
+    <section>
+      <div class="text-center">
+        <h1 class="mt-5 descripcionTrabajo" style="margin-bottom: 50px">Dormitorio - Cerro</h1>
       </div>
+    </section>
 
-        <!--carousel-->
-        <div class="container">
-          <div class="row justify-content-center">
+    <section id="galeria">
+      <div class="container">
 
-            
-            <div class="col-xs-12 col-sm-10">
-              <section id="intro">
-                <div class="intro-container">
-                  <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+        <header class="section-header">
+          <div id="contenedor-gal" class="wow fadeInUp">
+            <div class="container">
 
-                    <ol class="carousel-indicators"></ol>
+              
 
-                    <div class="carousel-inner" role="listbox">
-
-                      <div class="carousel-item active" style="background-image: url('img/trabajos/Trabajo_5/Imagen_1.jpg');">
-                        <div class="carousel-container">
-                          <div class="carousel-content">
-                            
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="carousel-item" style="background-image: url('img/trabajos/Trabajo_5/Imagen_2.jpg');">
-                        <div class="carousel-container">
-                          <div class="carousel-content">
-                            
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
-                      <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-
-                    <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
-                      <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-
-                  </div>
-                </div>
-              </section>
-
-               <div class="col-12">
-                <h2 class="descripcionTrabajo">Realización general de la obra</h2>
-                <h3>Revoques y pintura</h3>
-                <ul class="descripcionTrabajo">
-                  <li>Realización de revoque grueso y fino.</li>
-                  <li>Aplicación de imprimación.</li>
-                  <li>Aplicación de pintura.</li>                               
-                </ul>
-                <h3>Colocación de pavimento.</h3>
-                <ul class="descripcionTrabajo">
-                  <li>Colocación de piso flotante laminado y zócalos.</li>                               
-                </ul>
+              <div class="owl-carousel clients-carousel clients-item">
+                <a href="img/trabajos/Trabajo_5/Imagen_1.jpg" data-lightbox="portfolio" data-title="Dormitorio - Cerro" class="link-preview" title=""><img src="img/trabajos/Trabajo_5/Imagen_1.jpg" alt=""></a>
+                <a href="img/trabajos/Trabajo_5/Imagen_2.jpg" data-lightbox="portfolio" data-title="Dormitorio - Cerro" class="link-preview" title=""><img src="img/trabajos/Trabajo_5/Imagen_2.jpg" alt=""></a>
               </div>
 
-            </div>
 
-            
-            
-          </div>
-        </div><!--fin carousel-->
-       
-			
-			
+            </div>
+          </div><!-- #carousel -->
+        </header>
+
+      </div>
+    </section>
+
+    
+    <section>
+      <div style="text-align: center">
+        <h2 class="descripcionTrabajo">Realización general de la obra</h2>
+      </div>
+      <div class="container">
+        <div class="row">
+          <h3 class="col-12">Revoques y pintura</h3>
+          <ul class="descripcionTrabajo">
+            <li>Realización de revoque grueso y fino.</li>
+            <li>Aplicación de imprimación.</li>
+            <li>Aplicación de pintura.</li>                               
+          </ul>
+          <h3 class="col-12">Colocación de pavimento.</h3>
+          <ul class="descripcionTrabajo">
+            <li>Colocación de piso flotante laminado y zócalos.</li>                               
+          </ul>
+        </div>
       </div>
     </section>
 	
@@ -151,13 +129,29 @@
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Librerias y javascript para carousel -->
+    <!-- Librerias y javascript para carousel 
     <script src="lib/superfish/superfish.min.js"></script>
     <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>-->
+
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
     <script src="js/carousel.js"></script>
+    <script>
+        $(".clients-carousel").owlCarousel({
+        responsive: { 0: { items: 2 }, 768: { items: 2 }, 900: { items: 2 }
+        }
+      });
+    </script>
 
 	<script src="js/fb.js"></script>
   </body>
 
 </html>
+
+
+
+
+
