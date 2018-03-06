@@ -18,7 +18,6 @@
     <!-- Custom styles for this template -->
     <link href="css/full-width-pics.css" rel="stylesheet">
     
-	
 	<link href="css/fb.css" rel="stylesheet">
   </head>
 
@@ -116,7 +115,7 @@
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escriba un mensaje para nosotros" placeholder="Mensaje" style="min-height: 100px;"></textarea>
+                <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Por favor escriba un mensaje para nosotros" placeholder="Mensaje" style="min-height: 100px;"></textarea>
                 <div class="validation"></div>
               </div>
               <div class="text-center"><button type="submit">Enviar mensaje</button></div>
@@ -127,6 +126,10 @@
       </section><!-- #contact -->
 
     </main>
+	
+	<div class="overlay">
+		<img style="width:100px; left: 45%; top:30%; display: block; position: relative;" src="img/loading.gif">
+	</div>
 
     <!-- Footer -->
     <footer id="footer" class="py-5 bg-dark">
@@ -173,6 +176,12 @@
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script src="lib/contactform/contactform.js"></script>
+	
+	<!--<script>
+		$(document).ready(function () {
+			mostarCargando();
+		});
+	</script>-->
 	
 	<script src="js/fb.js"></script>
   </body>
