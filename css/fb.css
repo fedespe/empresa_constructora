@@ -638,7 +638,7 @@ a[class="nav-link"]{
 	padding: 0;
 }
 
-.overlay{
+/*.overlay{
 	display: none;
 	position: absolute;
 	top: 0;
@@ -650,4 +650,4 @@ a[class="nav-link"]{
 	opacity:.75;
 	-moz-opacity: 0.75;
 	filter: alpha(opacity=75);
-}
+}*/
