@@ -42,7 +42,7 @@ $mail->Body = $cuerpo;//"<hr><p>Nombre: "+$nombre+"</p><p>Email: </p><a href='ma
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 //Correo a donde llega el mail. Se pueden agregar varios de la misma forma. El segundo parámetro es opcional, es el nombre que figura en la lista de correos.
-$mail->addAddress('deortaw@gmail', 'Wiliam');
+$mail->addAddress('deortaw@gmail.com', 'Wiliam');
 //Correo con copia oculta. Se pueden agregar varios de la misma forma.
 $mail->addBCC('bdiaz@bigcheese.com.uy');
 $mail->addBCC('fsperonip@gmail.com');
