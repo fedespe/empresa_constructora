@@ -87,7 +87,7 @@ a[class="nav-link"]{
 
 /*Nosotros*/
 #nosotros {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  background: url("../img/nosotros/about-bg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -485,7 +485,7 @@ a[class="nav-link"]{
 
 /*galeria*/
 #galeria {
-  background: url("../img/about-bg.jpg") center top no-repeat fixed;
+  /*background: url("../img/nosotros/about-bg.jpg") center top no-repeat fixed;*/
   background-size: cover;
   padding: 18px 0 18px 0;
   margin-bottom: 20px;
