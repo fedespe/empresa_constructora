@@ -20,11 +20,11 @@ $mail->Port         = 465; //25, 80, 3535, 465 (Gmail)
 $mail->SMTPDebug = 0; //Debug al momento del envío del correo
 
 //Correo del que sale el mail
-$mail->Username     = "spods@isamarina.com";
+$mail->Username     = "info@wfconstrucciones.com";
 //Password de donde sale el mail
-$mail->Password     = "Spods123!";
+$mail->Password     = "WFConstru_18";
 //Nombre que se muestra del remitente
-$mail->SetFrom("spods@isamarina.com","WFConstrucciones");  
+$mail->SetFrom("info@wfconstrucciones.com","WFConstrucciones");  
 
 //Asunto del Correo
 $mail->Subject = "WFConstrucciones - Nuevo mensaje desde formulario web"; //Asunto del Correo
@@ -42,7 +42,8 @@ $mail->Body = $cuerpo;//"<hr><p>Nombre: "+$nombre+"</p><p>Email: </p><a href='ma
 $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
 //Correo a donde llega el mail. Se pueden agregar varios de la misma forma. El segundo parámetro es opcional, es el nombre que figura en la lista de correos.
-$mail->addAddress('deortaw@gmail.com', 'Wiliam');
+$mail->addAddress('info@wfconstrucciones.com', 'WF Construcciones');
+//$mail->addAddress('deortaw@gmail.com', 'Wiliam');
 //Correo con copia oculta. Se pueden agregar varios de la misma forma.
 $mail->addBCC('bdiaz@bigcheese.com.uy');
 $mail->addBCC('fsperonip@gmail.com');
