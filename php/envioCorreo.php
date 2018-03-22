@@ -27,7 +27,7 @@ $mail->Password     = "WFConstru_18";
 $mail->SetFrom("info@wfconstrucciones.com","WFConstrucciones");  
 
 //Asunto del Correo
-$mail->Subject = "WFConstrucciones - Nuevo mensaje desde formulario web"; //Asunto del Correo
+$mail->Subject = "WFConstrucciones - Nuevo mensaje de ".$nombre."."; //Asunto del Correo
 //Cuerpo del Correo (Formato HTML)
 $cuerpo = "<h3>Ha recibido un nuevo mensaje desde el formulario de contacto de la página <a href='http://wfconstrucciones.com'>WFConstrucciones</a></h3>
 <h4>A continuación, se presentan los datos ingresados en el formulario de contacto:</h4>
